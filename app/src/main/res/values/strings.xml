@@ -2,4 +2,5 @@
     <string name="app_name">Piper</string>
     <string name="login">Log In</string>
     <string name="create">Create Account</string>
+    <string name="linktext">Forgot Password/Username?</string>
 </resources>

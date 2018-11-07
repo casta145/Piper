@@ -16,6 +16,10 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".AccLogin"></activity>
+        <activity android:name=".CreateAcc"></activity>
+        <activity android:name=".AccFix"></activity>
+
     </application>
 
 </manifest>
