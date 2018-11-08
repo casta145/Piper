@@ -10,6 +10,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="165dp"
+        android:background="#95a7b1"
         android:text="@string/create" />
 
     <TextView
@@ -29,6 +30,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="104dp"
+        android:background="#95a7b1"
         android:text="@string/login" />
 
 </RelativeLayout>
