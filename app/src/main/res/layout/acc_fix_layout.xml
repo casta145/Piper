@@ -5,10 +5,57 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:layout_width="186dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="230dp"
-        android:text="IT WORKS" />
+        android:layout_marginTop="151dp"
+        android:text="@string/fixacc_1"
+        android:textAlignment="center"
+        android:textSize="10pt" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="@string/emailex"
+        android:textAlignment="center"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/input_text_design"
+        android:textSize="10pt" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="227dp"
+        android:text="@string/fixacc_2"
+        android:textAlignment="center"
+        android:textSize="10pt" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:background="@drawable/input_text_design"
+        android:textSize="10pt"
+        android:inputType="date" />
+
+    <Button
+        android:id="@+id/submitbtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="143dp"
+        android:background="@drawable/button_design"
+        android:text="@string/submit" />
 </RelativeLayout>

@@ -3,16 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/iconholder"
-        android:layout_width="220dp"
-        android:layout_height="187dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="38dp"
-        android:text="Icon Holder"
-        android:textAlignment="center" />
-
     <EditText
         android:id="@+id/userinput"
         android:layout_width="wrap_content"
@@ -20,6 +10,8 @@
         android:layout_below="@+id/usernametitle"
         android:layout_centerHorizontal="true"
         android:ems="10"
+        android:background="@drawable/input_text_design"
+        android:textSize="10pt"
         android:inputType="textPersonName"
         android:text=""
         android:textAlignment="center" />
@@ -29,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="Username"
+        android:text="@string/username"
         android:textSize="10pt" />
 
     <TextView
@@ -38,7 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/userinput"
         android:layout_centerHorizontal="true"
-        android:text="Password"
+        android:text="@string/password"
         android:textAlignment="center"
         android:textSize="10pt" />
 
@@ -49,6 +41,9 @@
         android:layout_below="@+id/passwordtitle"
         android:layout_centerHorizontal="true"
         android:ems="10"
+        android:text=""
+        android:background="@drawable/input_text_design"
+        android:textSize="10pt"
         android:inputType="textPassword" />
 
     <TextView
@@ -63,10 +58,11 @@
 
     <Button
         android:id="@+id/loginbutton"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="37dp"
+        android:layout_marginBottom="63dp"
+        android:background="@drawable/button_design"
         android:text="@string/login" />
 </RelativeLayout>
