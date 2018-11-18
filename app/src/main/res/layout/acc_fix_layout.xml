@@ -46,6 +46,8 @@
         android:layout_centerHorizontal="true"
         android:ems="10"
         android:background="@drawable/input_text_design"
+        android:hint="@string/dobex"
+        android:textAlignment="center"
         android:textSize="10pt"
         android:inputType="date" />
 
