@@ -11,8 +11,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="12dp"
         android:layout_marginTop="14dp"
-        android:textSize="10pt"
-        android:text="@string/fn" />
+        android:textSize="10pt"/>
 
     <TextView
         android:id="@+id/lastname"
@@ -21,7 +20,6 @@
         android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/firstname"
         android:layout_marginTop="55dp"
-        android:text="@string/ln"
         android:textSize="10pt" />
 
     <TextView
@@ -31,7 +29,6 @@
         android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/firstname"
         android:layout_marginTop="92dp"
-        android:text="@string/dob"
         android:textSize="10pt" />
 
     <EditText
@@ -43,7 +40,6 @@
         android:layout_toEndOf="@+id/dob"
         android:background="@drawable/input_text_design"
         android:ems="10"
-        android:hint="@string/dobex"
         android:inputType="date"
         android:textAlignment="center"
         android:textSize="10pt" />
@@ -55,7 +51,6 @@
         android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/firstname"
         android:layout_marginTop="155dp"
-        android:text="@string/email"
         android:textSize="10pt" />
 
     <EditText
@@ -89,7 +84,6 @@
         android:layout_marginTop="198dp"
         android:background="@drawable/input_text_design"
         android:ems="10"
-        android:hint="@string/emailex"
         android:inputType="textEmailAddress"
         android:textAlignment="center"
         android:textSize="10pt" />
@@ -100,7 +94,6 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/firstname"
         android:layout_centerVertical="true"
-        android:text="@string/user"
         android:textAlignment="center"
         android:textSize="10pt" />
 
@@ -145,7 +138,6 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="36dp"
-        android:background="@drawable/button_design"
-        android:text="@string/createv2" />
+        android:background="@drawable/button_design"/>
 
 </RelativeLayout>
