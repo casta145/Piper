@@ -11,6 +11,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="151dp"
         android:textAlignment="center"
+        android:text="@string/fixacc_1"
         android:textSize="10pt" />
 
     <EditText
@@ -20,6 +21,7 @@
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
         android:ems="10"
+        android:hint="@string/emailex"
         android:textAlignment="center"
         android:inputType="textEmailAddress"
         android:background="@drawable/input_text_design"
@@ -33,6 +35,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="227dp"
         android:textAlignment="center"
+        android:text="@string/fixacc_2"
         android:textSize="10pt" />
 
     <EditText
@@ -45,6 +48,7 @@
         android:background="@drawable/input_text_design"
         android:textAlignment="center"
         android:textSize="10pt"
+        android:hint="@string/dobex"
         android:inputType="date" />
 
     <Button
@@ -54,5 +58,6 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="143dp"
+        android:text="@string/submit"
         android:background="@drawable/button_design" />
 </RelativeLayout>
