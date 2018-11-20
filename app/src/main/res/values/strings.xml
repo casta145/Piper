@@ -8,7 +8,22 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="user">Username:</string>
+    <string name="pass">Password:</string>
+    <string name="email">Email:</string>
+    <string name="emailex">johnapple@gmail.com</string>
+    <string name="dobex">01/01/2000</string>
+    <string name="dob">Date of Birth:</string>
+    <string name="fn">First Name:</string>
+    <string name="ln">Last Name:</string>
+    <string name="createv2">Create</string>
+    <string name="fixacc_1">Enter your Email:</string>
+    <string name="fixacc_2">Enter your Date of Birth:</string>
+    <string name="submit">Submit</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
