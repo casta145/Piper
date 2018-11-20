@@ -31,11 +31,8 @@ public class PiperLogin extends AppCompatActivity {
     private View.OnClickListener acctLogin = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            //Intent login = new Intent(PiperLogin.this, AccLogin.class);
-            //startActivity(login);
-
-            Intent homepage = new Intent(PiperLogin.this,Homepage.class);
-            startActivity(homepage);
+            Intent login = new Intent(PiperLogin.this, AccLogin.class);
+            startActivity(login);
         }
     };
 }

@@ -19,9 +19,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        app:itemIconSize="50dp"
         app:itemBackground="@color/colorPrimaryDark"
-        app:itemIconTint=""
+        app:itemIconSize="50dp"
+        app:itemIconTint="@color/nav_item_foreground"
+        app:itemTextColor="@color/white"
         app:menu="@menu/navigation" />
 
 </android.support.design.widget.CoordinatorLayout>
