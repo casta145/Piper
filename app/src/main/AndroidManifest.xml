@@ -19,7 +19,6 @@
         <activity android:name=".AccLogin"/>
         <activity android:name=".CreateAcc"/>
         <activity android:name=".AccFix"/>
-        <activity android:name=".HomeScreen"/>
         <activity android:name=".Methods"/>
 
     </application>

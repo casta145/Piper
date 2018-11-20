@@ -34,8 +34,8 @@ public class AccLogin extends AppCompatActivity{
         @Override
         public void onClick (View view){
             if (Methods.check(username.getText().toString(), password.getText().toString())) {
-                Intent homescrn = new Intent(AccLogin.this,HomeScreen.class);
-                startActivity(homescrn);
+                Intent homepage = new Intent(AccLogin.this,Homepage.class);
+                startActivity(homepage);
             } else {
                 Toast.makeText(getApplicationContext(),"Error", Toast.LENGTH_SHORT).show();
                 username.setText("");
