@@ -40,16 +40,16 @@ public class Homepage extends AppCompatActivity {
                     fragment = new SearchFragment();
                     loadFragment(fragment);
                     return true;
-                case R.id.navigation_notifs:
-                    fragment = new SearchFragment();
+                case R.id.navigation_upload:
+                    fragment = new UploadFragment();
                     loadFragment(fragment);
                     return true;
-                case R.id.navigation_upload:
-                    fragment = new SearchFragment();
+                case R.id.navigation_notifs:
+                    fragment = new NotifsFragment();
                     loadFragment(fragment);
                     return true;
                 case R.id.navigation_prof:
-                    fragment = new SearchFragment();
+                    fragment = new ProfileFragment();
                     loadFragment(fragment);
                     return true;
             }
