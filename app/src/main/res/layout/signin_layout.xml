@@ -48,7 +48,8 @@
         android:ems="10"
         android:inputType="textPassword"
         android:text=""
-        android:textSize="10pt" />
+        android:textSize="10pt"
+        android:textAlignment="center" />
 
     <TextView
         android:id="@+id/clicklink"

@@ -21,6 +21,8 @@
         <activity android:name=".AccFix"/>
         <activity android:name=".Methods"/>
         <activity android:name=".Homepage"/>
+        <activity android:name=".UploadPhoto"/>
+        <activity android:name=".UploadText"/>
 
     </application>
 
