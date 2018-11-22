@@ -6,7 +6,10 @@ import android.view.View;
 import android.widget.Button;
 import android.content.Intent;
 
+import java.util.ArrayList;
+
 public class PiperLogin extends AppCompatActivity {
+    public static ArrayList<Profile> profiles;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +21,8 @@ public class PiperLogin extends AppCompatActivity {
 
         createAcc.setOnClickListener(acctCreation);
         loginAcc.setOnClickListener(acctLogin);
+
+        profiles = new ArrayList<>();
     }
 
     private View.OnClickListener acctCreation = new View.OnClickListener() {
