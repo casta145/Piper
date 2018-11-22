@@ -1,7 +1,6 @@
 package com.example.alfonsoc.piper;
 
 import android.Manifest;
-import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
@@ -25,13 +24,23 @@ public class UploadPhoto extends AppCompatActivity {
 
     private static int RESULT_LOAD_IMAGE = 1;
     Button takePictureButton;
-    ImageView imageView;
+    ImageView galleryView;
     Uri file;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_upload_photo);
+
+        Button cancel = findViewById(R.id.cancel);
+        cancel.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View arg0) {
+                Intent backHome = new Intent(UploadPhoto.this, Homepage.class);
+                startActivity(backHome);
+            }
+        });
 
         Button buttonLoadImage = findViewById(R.id.buttonLoadPicture);
         buttonLoadImage.setOnClickListener(new View.OnClickListener() {
@@ -47,21 +56,35 @@ public class UploadPhoto extends AppCompatActivity {
             }
         });
 
-        takePictureButton = findViewById(R.id.button_image);
-        imageView =  findViewById(R.id.imageview);
+        takePictureButton = findViewById(R.id.buttonCamera);
+        galleryView =  findViewById(R.id.galleryPic);
 
-        if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
+        takePictureButton.setEnabled(false);
+
+        /*if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
             takePictureButton.setEnabled(false);
             ActivityCompat.requestPermissions(this, new String[] { Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE }, 0);
-        }
+        }*/
+
+        Button post = findViewById(R.id.photoPost);
+        post.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View arg0) {
+
+                Intent post = new Intent(UploadPhoto.this, Homepage.class);
+
+                startActivityForResult(post, RESULT_LOAD_IMAGE);
+            }
+        });
     }
 
-    @Override
+    /*@Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
         if (requestCode == 0) {
             if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED
                     && grantResults[1] == PackageManager.PERMISSION_GRANTED) {
-                takePictureButton.setEnabled(true);
+                takePictureButton.setEnabled(false);
             }
         }
     }
@@ -72,13 +95,13 @@ public class UploadPhoto extends AppCompatActivity {
         intent.putExtra(MediaStore.EXTRA_OUTPUT, file);
 
         startActivityForResult(intent, 100);
-    }
+    }*/
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        if (requestCode == RESULT_LOAD_IMAGE && resultCode == RESULT_OK && null != data) {
+        /*if (requestCode == RESULT_LOAD_IMAGE && resultCode == RESULT_OK && null != data) {
             Uri selectedImage = data.getData();
             String[] filePathColumn = {MediaStore.Images.Media.DATA};
 
@@ -90,20 +113,22 @@ public class UploadPhoto extends AppCompatActivity {
             String picturePath = cursor.getString(columnIndex);
             cursor.close();
 
-            ImageView imageView = (ImageView) findViewById(R.id.imgView);
-            imageView.setImageBitmap(BitmapFactory.decodeFile(picturePath));
+            ImageView cameraView = findViewById(R.id.cameraPic);
+            //cameraView.setImageBitmap(BitmapFactory.decodeFile(picturePath));
+            //User.photoPosts.add(galleryView);
 
-        }
+        }*/
 
         if (requestCode == 100) {
             if (resultCode == RESULT_OK) {
-                imageView.setImageURI(file);
+                galleryView.setImageURI(file);
+                //User.photoPosts.add(galleryView);
             }
 
         }
     }
 
-    private static File getOutputMediaFile(){
+    /*private static File getOutputMediaFile(){
         File mediaStorageDir = new File(Environment.getExternalStoragePublicDirectory(
                 Environment.DIRECTORY_PICTURES), "CameraDemo");
 
@@ -116,5 +141,5 @@ public class UploadPhoto extends AppCompatActivity {
         String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
         return new File(mediaStorageDir.getPath() + File.separator +
                 "IMG_"+ timeStamp + ".jpg");
-    }
+    }*/
 }

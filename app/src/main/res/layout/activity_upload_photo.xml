@@ -20,21 +20,21 @@
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/next"
+        android:id="@+id/photoPost"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="321dp"
         android:layout_marginTop="3dp"
-        android:text="Next"
+        android:text="Post"
         android:background="@color/colorPrimaryDark"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold" />
 
     <ImageView
-        android:id="@+id/imgView"
+        android:id="@+id/cameraPic"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"></ImageView>
@@ -43,7 +43,7 @@
         android:id="@+id/buttonLoadPicture"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/button_image"
+        android:layout_alignStart="@+id/buttonCamera"
         android:layout_alignParentTop="true"
         android:layout_gravity="center"
         android:layout_marginStart="7dp"
@@ -52,14 +52,14 @@
         android:text="Load Picture"></Button>
 
     <ImageView
-        android:id="@+id/imageview"
+        android:id="@+id/galleryPic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_above="@+id/button_image"/>
+        android:layout_above="@+id/buttonCamera"
+        android:layout_centerHorizontal="true" />
 
     <Button
-        android:id="@+id/button_image"
+        android:id="@+id/buttonCamera"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_alignParentBottom="true"

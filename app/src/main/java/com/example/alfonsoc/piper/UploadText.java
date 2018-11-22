@@ -21,7 +21,7 @@ public class UploadText extends AppCompatActivity {
         Button post = findViewById(R.id.post);
 
         TextView user = findViewById(R.id.username);
-        user.setText(User.users.get(0).username);
+        //user.setText(Profile.);
 
         textPost = findViewById(R.id.txtPost);
 
@@ -41,7 +41,7 @@ public class UploadText extends AppCompatActivity {
         @Override
         public void onClick(View view) {
             String story = textPost.getText().toString();
-            User.textPosts.add(story);
+            //User.textPosts.add(story);
             Intent backHome = new Intent(UploadText.this, Homepage.class);
             startActivity(backHome);
         }

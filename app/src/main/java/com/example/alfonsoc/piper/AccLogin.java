@@ -34,8 +34,6 @@ public class AccLogin extends AppCompatActivity{
         @Override
         public void onClick (View view){
             if (Methods.check(username.getText().toString(), password.getText().toString())) {
-                User newUser = new User(username.getText().toString());
-                User.users.add(newUser);
                 Intent homepage = new Intent(AccLogin.this,Homepage.class);
                 startActivity(homepage);
             } else {
