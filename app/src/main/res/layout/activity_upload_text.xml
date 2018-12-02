@@ -63,16 +63,30 @@
 
     <EditText
         android:id="@+id/txtPost"
-        android:layout_width="388dp"
-        android:layout_height="531dp"
+        android:layout_width="362dp"
+        android:layout_height="295dp"
         android:layout_alignStart="@+id/icon"
         android:layout_alignParentTop="true"
         android:layout_marginStart="-1dp"
-        android:layout_marginTop="151dp"
+        android:layout_marginTop="216dp"
         android:ems="10"
         android:hint="Type your post."
         android:inputType="textMultiLine"
         android:textAlignment="center"
+        android:textColor="@color/white"
         android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/titlePost"
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/icon"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="151dp"
+        android:hint="Title (optional)"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold" />
 
 </RelativeLayout>

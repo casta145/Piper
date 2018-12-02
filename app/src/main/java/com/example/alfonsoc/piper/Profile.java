@@ -2,7 +2,13 @@ package com.example.alfonsoc.piper;
 
 import android.media.Image;
 
+import java.util.ArrayList;
+
 public class Profile {
+
+    public static ArrayList<String> titles = new ArrayList<String>();
+    public static ArrayList<String> txtPosts = new ArrayList<String>();
+
     String firstname;
     String lastname;
     String dob;

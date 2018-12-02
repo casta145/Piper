@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 public class UploadText extends AppCompatActivity {
 
+    EditText titlePost;
     EditText textPost;
 
     @Override
@@ -20,9 +21,7 @@ public class UploadText extends AppCompatActivity {
         Button cancel = findViewById(R.id.cancel);
         Button post = findViewById(R.id.post);
 
-        TextView user = findViewById(R.id.username);
-        //user.setText(Profile.);
-
+        titlePost = findViewById(R.id.titlePost);
         textPost = findViewById(R.id.txtPost);
 
         cancel.setOnClickListener(backHome);
@@ -40,8 +39,10 @@ public class UploadText extends AppCompatActivity {
     private View.OnClickListener postText = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
+            String title = titlePost.getText().toString();
             String story = textPost.getText().toString();
-            //User.textPosts.add(story);
+            Profile.titles.add(title);
+            Profile.txtPosts.add(story);
             Intent backHome = new Intent(UploadText.this, Homepage.class);
             startActivity(backHome);
         }
