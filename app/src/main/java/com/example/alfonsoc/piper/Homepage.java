@@ -21,6 +21,7 @@ public class Homepage extends AppCompatActivity {
         setContentView(R.layout.activity_homepage);
 
         BottomNavigationView navigation = findViewById(R.id.navigation);
+        navigation.setItemIconTintList(null);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
         //Load the HomeFragment when app is loaded

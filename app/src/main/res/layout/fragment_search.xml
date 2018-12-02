@@ -9,9 +9,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:textSize="30sp"
         android:layout_gravity="center"
-        android:text="@string/title_search"/>
+        android:text="Search: Under Construction!"
+        android:textAlignment="center"
+        android:textSize="30sp" />
 
 </FrameLayout>
